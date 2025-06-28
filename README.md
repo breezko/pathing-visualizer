@@ -8,7 +8,12 @@ A lightweight web application to visualize pathfinding algorithms in a grid.
 
 - Visual grid editor to toggle walls
 - Start and end points
-- A* algorithm server-side in Python
+- Pathing algorithm server-side in Python
+    - A*
+    - Dijkstra
+    - Breadth-First Search
+    - Depth-First Search
+    - Lee Algorithm
 - Interactive visualization of the path
 
 ---
