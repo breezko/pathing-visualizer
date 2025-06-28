@@ -12,7 +12,12 @@ A lightweight web application to visualize pathfinding algorithms in a grid.
 - Interactive visualization of the path
 
 ---
+## Demo
 
+![Demo](assets/demo.gif)
+
+
+---
 ## 🛠️ Tech Stack
 
 - **Python** (3.8+)
