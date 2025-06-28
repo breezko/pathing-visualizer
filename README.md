@@ -101,15 +101,6 @@ http://127.0.0.1:5050/
 
 ---
 
-## 🎯 Future Enhancements
-
-- Add more algorithms: Dijkstra, BFS, DFS
-- Support diagonal movement
-- Implement weighted cells
-- Add animation controls and speed adjustment
-
----
-
 ## 📝 License
 
 This project is open-source and available under the GPL-3 License.
