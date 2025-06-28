@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Pathfinding Visualizer</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid-section">
+            <h1>Pathfinding Visualizer</h1>
+            <div id="grid"></div>
+            <button onclick="generateMaze()" class="btn btn-maze">Generate Maze</button>
+
+            <div class="button-group">
+                <label for="algorithm" style="margin-right:0.5rem;">Algorithm:</label>
+                <select id="algorithm" class="dropdown">
+                    <option value="a*">A*</option>
+                    <option value="dijkstra">Dijkstra</option>
+                    <option value="bfs">Breadth-First Search</option>
+                    <option value="dfs">Depth-First Search</option>
+                    <option value="lee">Lee Algorithm</option>
+                </select>
+
+                <label for="speed" style="margin-left:1rem; margin-right:0.5rem;">Speed:</label>
+                <select id="speed" class="dropdown">
+                    <option value="slow">Slow</option>
+                    <option value="normal" selected>Normal</option>
+                    <option value="fast">Fast</option>
+                    <option value="instant">Instant</option>
+                </select>
+                <button onclick="solve()" class="btn btn-solve">Solve</button>
+                <button onclick="resetGrid()" class="btn btn-clear">Clear</button>
+            </div>
+            <div id="notification" class="notification"></div>
+
+
+
+        </div>
+        <div class="instructions">
+            <h2>How to Use</h2>
+            <ol>
+                <li><strong>Set Start Point:</strong> Click any cell to mark the starting position (green).</li>
+                <li><strong>Set End Point:</strong> Click another cell to mark the destination (red).</li>
+                <li><strong>Draw Walls:</strong> Click and drag to create obstacles (black).</li>
+                <li><strong>Select Algorithm:</strong> Choose <em>A*</em>, <em>Dijkstra</em>, or <em>Breadth-First
+                        Search</em> from the dropdown.</li>
+                <li><strong>Choose Speed:</strong> Select how fast the visualization plays (slow, normal, fast, or
+                    instant).</li>
+                <li><strong>Optionally: Generate Random Maze:</strong> Click the "Generate Maze" button to create a
+                    random obstacle
+                    layout. (Make sure you have set start and end first.)</li>
+                <li><strong>Solve:</strong> Click "Solve" to visualize the pathfinding algorithm.</li>
+                <li><strong>Clear:</strong> Reset the grid to start over.</li>
+            </ol>
+            <p>
+                The notification below the buttons will show how many nodes were explored and how long the computation
+                took.
+            </p>
+        </div>
+
+    </div>
+    <script src="/static/main.js"></script>
+</body>
+
+</html>

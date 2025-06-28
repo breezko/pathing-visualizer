@@ -1,0 +1,11 @@
+[project]
+name = "pathing-visualizer"
+version = "0.1.0"
+description = "A lightweight web application to visualize pathfinding algorithms in a grid."
+readme = "README.md"
+authors = [{ name = "Hendrik Heim" }]
+
+requires-python = ">=3.13"
+dependencies = [
+    "flask"
+]
